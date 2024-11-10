@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <img src="https://banner2.cleanpng.com/20180509/cjq/kisspng-logo-symbol-avatar-brand-5af296c3ec69d6.2288439215258477479684.jpg" alt="Logo">
+        </div>
+        <div class="title">Сайт кнопок</div>
+        <nav>
+            <a onclick="showContent('У нас их нет')">Контакты<'/a>
+            <a onclick="showContent('Мы сайт кнопок лоооооооооооол')">О нас</a>
+            <a onclick="showContent('Кнопки круто ещкрере')">В чем смысл сайта ???</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content" class="content">HFFBHDFHBDFBF</div>
+<script>   
+ function set(id, style, value) {
+            const element = document.getElementById(id)
+            element.style[style] = value
+          }
+
+function showContent(text) {
+    document.getElementById('content').innerText = text;
+    document.getElementById('content').style.display = 'block';
+}
+ </script> 
+
+   
+
+    <button id="myButton">
+        <span class="text" onclick="set('content', 'display', 'block')">Кнопка</span>
+    </button>
+    <div id="randomText" class="hidden">...</div>
+ 
+<script>
+      ('myButton').addEventListener('click', function() {
+    var randomText = document.getElementById('randomText');
+    randomText.classList.toggle('visible');
+    randomText.innerText = 'Your text here!';
+});
+
+document.getElementById('randomText').addEventListener('click', function() {
+    this.style.color = getRandomColor();
+});
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+</script> 
+
+
+
+
+   </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body> 
+
